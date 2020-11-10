@@ -1,0 +1,532 @@
+
+/*	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	*/
+/*	@IMPORT */
+	/* @import statements need to be the _first_ items in a CSS file… */
+	@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i&display=swap');
+	@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i&display=swap');
+	@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=Indie+Flower&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+	@import url('reset.css');
+
+
+
+
+
+/*	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	*/
+/*	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	*/
+/*	TYPOGRAPHY	*/
+
+
+
+
+/*	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	*/
+/*	FONTS	*/
+
+	/* body */
+	body { font-family: 'IBM Plex Sans', sans-serif; }
+
+	/* titles */
+	h1, h2, h3, h4 { font-family: 'Raleway', sans-serif;}
+
+	/* data */
+	table, table * { font-family: 'IBM Plex Mono', monospace; }
+
+	/* quotes, lists */
+	blockquote { font-family: 'IBM Plex Sans', sans-serif; }
+	ul, li { font-family: 'IBM Plex Sans', sans-serif; }
+
+
+
+
+/*	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	*/
+/*	FONT SIZES	*/
+
+	/*	base default: 1rem = 16 pixels = 12pt = 96dpi */
+	html { font-size: 100%; }
+
+	/*	HTML CSS Defaults https://www.w3.org/TR/CSS2/sample.html
+		(There is no single universal default, browsers have different default values.)
+		h1: 2em
+		h2: 1.5em
+		h3: 1.17em
+		h4: 1em
+		h5: 0.83em
+
+		Bootstrap defaults:
+		h1: 2.50rem
+		h2: 2.00rem
+		h3: 1.75rem
+		h4: 1.50rem
+		h5: 1.25rem
+		h6: 1.00rem
+	*/
+	/*	Conversion:
+		rem × 16 = px
+		rem × 12 = pt
+		px × 0.75 = pt
+		pt × 1.33 = px
+	*/
+
+	h1 { font-size: 2.50rem; }	/* 40px | 30pt */
+	h2 { font-size: 2.50rem; }	/* 40px | 30pt */
+	h3 { font-size: 1.75rem; }	/* 28px | 21pt */
+	h4 { font-size: 1.50rem; }	/* 24px | 18pt */
+	h5 { font-size: 1.25rem; }	/* 20px | 15pt */
+	h6 { font-size: 1.00rem; }	/* 16px | 12pt */
+
+	small, .small { font-size: 85%; }	/* 13.6px | 10.2pt */
+	/* standard default ~= 0.8em = ~13px = ~10pt */
+
+	small small,
+	.x-small,
+	.small .small {
+		font-size: 75%;	/* 12px | 9pt */
+	}
+
+
+
+
+/*	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	*/
+/*	FONT-STYLE	*/
+
+
+
+
+
+
+/*	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	*/
+/*	FONT WEIGHTS	*/
+
+	/* CSS Font Weights
+		100 (ultralight) – 900 (extrabold)
+		400 = normal
+		700 = bold
+	*/
+
+	  body, p { font-weight: 300; }
+	b, strong { font-weight: 500 !important; }
+
+
+	h1 { font-weight: 300; }
+	h2 { font-weight: 200; }
+
+	h1 b, h1 strong { font-weight: 500 !important; }
+	h2 b, h2 strong { font-weight: 400 !important; }
+
+
+	h3, h4, h5 { font-weight: 500; }
+
+	h3 b, h3 strong,
+	h4 b, h4 strong,
+	h5 b, h5 strong,
+	h6 b, h6 strong {
+		font-weight: 700 !important;
+	}
+
+	ul, li { font-weight: 400; }
+
+
+
+
+/*	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	*/
+/*	LINE HEIGHT	*/
+
+	/*	we're using _em_ for line height,
+		so it's proportional to the _text size_ …	*/
+	   body { line-height: 1.33em; }
+	      p { line-height: 1.33em; }
+	     h1 { line-height: 1em;    }
+	     h2 { line-height: 1em;    }
+	     h3 { line-height: 1em;    }
+	     h4 { line-height: 1em;    }
+	 .small { line-height: 1.5em;  }
+
+
+
+
+/*	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	*/
+/*	LETTER-SPACING	*/
+
+	h1 { letter-spacing: -0.02em; }
+
+	.small { letter-spacing: 0.025em; }
+
+	small small,
+	.x-small,
+	.small .small {
+		letter-spacing: 0.033em;
+	}
+
+
+
+/*	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	*/
+/*	MICROTYPOGRAPHY AND RENDERING*/
+
+	/* better typography, but can be slow…
+	https://css-tricks.com/almanac/properties/t/text-rendering/
+	https://developer.mozilla.org/fr/docs/Web/CSS/text-rendering */
+	      body { text-rendering: optimizeLegibility; }
+	h1, h2, h3 { text-rendering: geometricPrecision; }
+
+
+
+
+
+
+
+
+/*	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	*/
+/*	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	*/
+/*	MARGINS */
+
+	/* standard default:	h1 { margin-top: 0.67em;  margin-bottom: 0.67em; }	*/
+	/* standard default:	h2 { margin-top: 0.83em;  margin-bottom: 0.83em; }	*/
+	/* standard default:	h3 { margin-top: 1.00em;  margin-bottom: 1.00em; }	*/
+	/* standard default:	h4 { margin-top: 1.33em;  margin-bottom: 1.33em; }	*/
+	/* standard default:	h5 { margin-top: 1.67em;  margin-bottom: 1.67em; }	*/
+	/* standard default:	h6 { margin-top: 2.33em;  margin-bottom: 2.33em; }	*/
+	/* standard default:	 p { margin-top: 1.00em;  margin-bottom: 1.00em; }	*/
+
+	h1, h2, h3, h4, h5, h6, p, object, iframe, figure, figcaption, video, embed, canvas
+	blockquote, pre,
+	dl, ol, ul, table{
+		   margin-top: 0.5rem;
+		margin-bottom: 0.5rem;
+	}
+
+	ul, ol,
+	blockquote, pre, table, dl {
+		   margin-top: 1rem;
+		margin-bottom: 1rem;
+	}
+
+	h1, h2, h3, h4, h5, h6 {
+		margin-top: 1.5rem;
+	}
+
+	h1 { }
+	h2 { }
+	h3 { }
+	h4 { }
+	h5 { }
+	h6 { }
+	 p { }
+
+	p + p { }
+
+	h1 + p { }
+	h2 + p { }
+	h3 + p { }
+	h4 + p { }
+	h5 + p { }
+	h6 + p { }
+
+	p + h1 { }
+	p + h2 { }
+	p + h3 { }
+	p + h4 { }
+	p + h5 { }
+	p + h6 { }
+
+
+
+
+
+
+
+
+/*	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	*/
+/*	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	*/
+/*	COLOR */
+
+	/*
+		If you want to use variables:
+		first, define them in a root selector:
+			:root {
+				--aVar: #F1357A;
+			}
+		Then you can use them in elements:
+			h1 {
+				background-color: var(--aVar);
+			}
+		https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties
+		https://caniuse.com/?search=CSS%20custom%20properties
+	*/
+	/*
+		If you have *inline* SVG elments like logos or widgets that you’d like to color with CSS
+		you can use the fill property
+			svg .highlight { fill: #F1357A; }
+	*/
+
+/*	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	*/
+/*	Blue
+		Hex:	#1F5C99
+		RGB:	31  92  153
+		HSB:	210°  80%  60%
+	*/
+	.yellow, .yellow * { color: #f3c523; }
+
+/*	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	*/
+/*	GreenBlue
+		Hex:	#7AA3CC
+		RGB:	122  163  204
+		HSB:	210°  40%  80%
+	*/
+	.blueGreen, .blueGreen * { color: #147782; }
+
+/*	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	*/
+/*	Blue
+		Hex:	#FF8000
+		RGB:	255  128  0
+		HSB:	30°  100%  100%
+	*/
+	.blue, .blue * { color: #14375a; }
+
+/*	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	*/
+/*	White
+		Hex:	#322E29
+		RGB:	50  46  41
+		HSB:	33°  18%  20%
+	*/
+	.white, .white * { color: #f4f6fc; }
+
+/*	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	*/
+/*	Black
+		Hex:	#7F7C79
+		RGB:	127  124  121
+		HSB:	33°  5%  50%
+	*/
+	.black, .black * { color: #1f1f1f; }
+
+/*	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	*/
+
+
+/*BUTTON*/
+
+.button {
+  background-color: #147782; /* blueGreen */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.button {
+  transition-duration: 0.4s;
+}
+
+.button:hover {
+  background-color: rgb(20,119,130, 0.5); /* blueGreen */
+  color: white;
+}
+
+
+
+/*	COLOR	*/
+
+	body {
+		background-color: #000000;
+		color: #322E29;
+	}
+	p, li, blockquote, td {
+		color: #f4f6fc;
+	}
+
+	h1{
+		color: #f3c523;
+	}
+	h2, h3, h4{
+		color: #147782;
+	}
+
+
+	#logoType .logoFill { fill: #f4f6fc;}
+	#logoType .logoTextBkg { fill: #000000;}
+
+	/*.yellow .swatch { background-color: #f3c523; }
+	.blueGreen .swatch { background-color: #147782; }
+	.blue .swatch { background-color: #14375a; }
+	.white .swatch { background-color: #f4f6fc; }
+	.black .swatch { background-color: #1f1f1f; }*/
+
+
+/*	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	*/
+/*	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	*/
+/*	STYLING ELEMENTS	*/
+
+
+/*	LINKS	*/
+	a:link, a:visited, a:hover, a:active {
+		color: #f4f6fc;
+		text-decoration: none;
+		border-bottom: 1px solid #147782;
+	}
+	a:link { }
+	a:visited { }
+	a:hover {
+		color: #147782;
+		}
+
+
+/*AUDIO*/
+audio::-webkit-media-controls-panel {
+			background-color: #147782;
+}
+
+
+audio{
+	outline: none;
+    border: none;
+}
+
+/*	LISTS	*/
+	ul {
+		list-style-type: none;
+	}
+
+	ul li {
+		margin-bottom: 0.5rem;
+		text-indent: -0.5rem;
+	}
+		li:before {
+			font-weight: 900;
+			content: "·";
+			color: #147782;
+			display: inline-block;
+			width: 0.5rem;
+	}
+
+
+
+
+/*	QUOTES	*/
+	blockquote {
+		margin-left: 0;
+		padding-left: 2rem;
+		padding-right: 2rem;
+		border-left: 1px solid #147782;
+		font-style: italic;
+	}
+
+
+
+
+/*	TABLES	*/
+	table {
+		border-collapse: collapse;
+		   margin-top: 2em;
+		margin-bottom: 2em;
+	}
+
+	th, td {
+		   padding-top: 0.25em;
+		padding-bottom: 0.25em;
+	}
+
+	table, tr, td { border: none; }
+	th, td { border-bottom: 1px solid #147782; }
+
+	th { font-style: italic; font-weight: 500; color: #147782; }
+
+	th, td {
+		text-align: right;
+		padding-left: 2em;
+		padding-right: 0;
+	}
+	td:first-of-type,
+	th:first-of-type {
+		text-align: left;
+		padding-left: 0;
+		padding-right: 2em;
+	}
+
+	/*	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	*/
+	/*	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	*/
+	/*	CUSTOM STYLES	*/
+
+	.display {
+		font-size: 150%;
+	}
+	h1.display { font-weight: 100; font-size: 3.75rem; }
+	h2.display { font-weight: 100; font-size: 3.75rem; }
+	h3.display { font-weight: 200; font-size: 2.625rem; }
+	h4.display { font-weight: 200; font-size: 2.25rem; }
+	h5.display { font-weight: 300; font-size: 1.875rem; }
+	h6.display { font-weight: 300; font-size: 1.50rem; }
+	 p.display { font-weight: 400; font-size: 1.50rem;}
+
+	.hilite{
+		display: inline-block;
+		background-color: #000;
+		color: #FFF;
+		padding: 1rem;
+	}
+	.hilite.orange {
+		background-color: #147782;
+	}
+	.hilite.blue {
+		background-color: #1F5C99;
+	}
+
+
+
+
+
+
+
+/*	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	*/
+/*	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	*/
+
+/* background image*/
+
+.bg-img{
+  /* Full height */
+  max-height: 100rem;
+  width: 100rem;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/*	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	*/
+/*	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
+
+/*about*/
+
+.text-block{
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  background-color: black;
+  color: white;
+  width:30rem;
+  height: 40rem;
+}
+
+.text-block h4{
+	padding-top:5rem;
+	font-size: 5rem;
+}
+
+.text-block h4, p{
+	padding-left:5rem;
+}
+
+.text-block p{
+	width: 20rem;
+	font-size: 1rem;
+}
+
+.text-block h6{
+	padding-left:5rem;
+	font-size: 1rem;
+	width: 20rem;
+}
+
+
+/*	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	*/
+/*	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
