@@ -484,7 +484,7 @@ audio{
 .bg-img{
   /* Full height */
   max-height: 100rem;
-  width: 100rem;
+  width: 100%;
 
   /* Center and scale the image nicely */
   background-position: center;
@@ -499,24 +499,26 @@ audio{
 
 .text-block{
   position: absolute;
-  top: 50px;
+  top: 100px;
   right: 50px;
   background-color: black;
   color: white;
   width:30rem;
-  height: 40rem;
+  height: 35rem;
 }
 
 .text-block h4{
-	padding-top:5rem;
-	font-size: 5rem;
+	font-size: 3rem;
+	color: #f3c523
 }
+
 
 .text-block h4, p{
 	padding-left:5rem;
 }
 
 .text-block p{
+	padding-top: 1rem;
 	width: 20rem;
 	font-size: 0.7rem;
 }
@@ -527,6 +529,11 @@ audio{
 	width: 20rem;
 }
 
-
+.logo{
+	position: absolute;
+	top: 100px;
+	left: 50px;
+	z-index: 100;
+}
 /*	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	*/
 /*	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-
