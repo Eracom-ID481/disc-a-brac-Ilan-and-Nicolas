@@ -40,6 +40,7 @@ ul, li {
 /*	base default: 1rem = 16 pixels = 12pt = 96dpi */
 html {
     font-size: 100%;
+    scroll-behavior: smooth;
 }
 
 /*	HTML CSS Defaults https://www.w3.org/TR/CSS2/sample.html
@@ -383,10 +384,6 @@ body {
     color: #322E29;
 }
 
-p, li, blockquote, td {
-    color: #f4f6fc;
-}
-
 h1 {
     color: #f3c523;
 }
@@ -415,7 +412,6 @@ h2, h3, h4 {
 a:link, a:visited, a:hover, a:active {
     color: #f4f6fc;
     text-decoration: none;
-    border-bottom: 1px solid #147782;
 }
 
 a:link {}
@@ -423,7 +419,7 @@ a:link {}
 a:visited {}
 
 a:hover {
-    color: #147782;
+    color: #f3c523;
 }
 
 /*AUDIO*/
@@ -561,6 +557,39 @@ p.display {
 
 /*	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	*/
 /*	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	*/
+/* Header/Logo Title */
+.header {
+    position: fixed;
+    padding: 1.5rem;
+    width: 100%;
+    text-align: left;
+    display: flex;
+    background: #1f1f1f;
+    box-shadow: 2px 2px 10px 1px white;
+    z-index: 10000;
+}
+
+.h2 {
+    color: #f3c523;
+    font-size: 25px;
+    font-weight: 900;
+    text-transform: uppercase;
+    padding-left: 5rem
+}
+
+.header h3 {
+    color: #f3c523;
+    font-size: 25px;
+    font-weight: 900;
+    text-transform: uppercase;
+    padding-left: 40rem;
+}
+
+/* Page Content */
+.content {
+    padding: 20px;
+}
+
 /* background image*/
 #welcome {
     min-height: 100vh;
@@ -593,38 +622,47 @@ p.display {
 .text-block {
     position: absolute;
     top: 100px;
-    right: 50px;
+    left: 0px;
+    display: flex;
+    flex-direction: column;
     background-color: #1f1f1f;
     color: white;
     width: 30rem;
-    height: 35rem;
+    height: 26rem;
 }
 
 .text-block h4 {
-    font-size: 3rem;
-    color: #f3c523
+    font-size: 2.5rem;
+    font-weight: 900;
+    color: #f3c523;
+    text-transform: uppercase;
+    padding-left: 11rem;
+    padding-top: 1rem;
 }
 
-.text-block h4 {
-    padding-left: 5rem;
-    padding-top: 10rem;
+.text-block h5 {
+    font-size: 2rem;
+    font-weight: 900;
+    color: #f3c523;
+    text-transform: uppercase;
+    padding-left: 11rem;
 }
 
 .text-block img {
-    padding-left: 3.5rem;
+    padding-left: 2.5rem;
     padding-top: 1rem;
 }
 
 .text-block p {
-    padding-top: 1rem;
     width: 20rem;
-    padding-left: 5rem;
+    padding-left: 4rem;
     font-size: 0.9rem;
 }
 
 .text-block h6 {
-    padding-left: 5rem;
+    padding-left: 4rem;
     font-size: 1rem;
+    padding-top: 1rem;
     width: 20rem;
 }
 
@@ -644,12 +682,12 @@ p.display {
 
 .grid .album {
     display: flex;
+    justify-content: center;
     flex-direction: column;
     background-color: #1f1f1f;
 }
 
 .grid .album h1 {
-    padding-top: 3rem;
     font-weight: 900;
     text-align: center;
     text-transform: uppercase;
@@ -690,6 +728,7 @@ p.display {
     padding-top: 3rem;
     font-weight: 900;
     padding-left: 5rem;
+    text-transform: uppercase;
     color: #1f1f1f;
 }
 
@@ -709,8 +748,7 @@ p.display {
 
 /* footer*/
 .footer {
-    background: #000000;
-    color: #d3d3d3;
+    background: #f4f6fc;
     height: 400px;
     position: relative;
 }
@@ -722,7 +760,20 @@ p.display {
 
 .footer .footer-content .footer-section {
     flex: 1;
-    padding: 25px;
+    padding-top: 2rem;
+    padding-left: 5rem;
+}
+
+.footer h1 {
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.footer-section a {
+    color: #1f1f1f;
+    text-align: left;
+    font-size: 20px;
+    font-weight: 300;
 }
 
 .footer .footer-bottom {
@@ -734,7 +785,7 @@ p.display {
     position: absolute;
     bottom: 0px;
     left: 0px;
-    padding-top: 20px;
+    padding-top: 35px;
 }
 
 /*	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	*/
