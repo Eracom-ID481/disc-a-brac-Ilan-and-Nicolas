@@ -1103,6 +1103,36 @@ p.display {
         width: 20rem;
     }
 
+    .grid .album .map img {
+        height: 30rem;
+        width: 30rem;
+    }
+
+    .grid .map {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        background-color: #1f1f1f;
+    }
+
+    .grid .map h1 {
+        font-weight: 900;
+        font-size: 3rem;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    .grid .map h3 {
+        padding-bottom: 2rem;
+        font-weight: 200;
+        text-align: center;
+    }
+
+    .grid .map img {
+        height: 20rem;
+        width: 20rem;
+    }
+
     .grid .album img {
         height: 20rem;
         width: 20rem;
@@ -1390,6 +1420,41 @@ p.display {
     .grid .album img {
         height: 15rem;
         width: 15rem;
+    }
+
+    .grid .album .map img {
+        height: 30rem;
+        width: 30rem;
+    }
+
+    .grid .map {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        background-color: #1f1f1f;
+    }
+
+    .grid .map h1 {
+        font-weight: 900;
+        font-size: 3rem;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    .grid .map h3 {
+        padding-bottom: 2rem;
+        font-weight: 200;
+        text-align: center;
+    }
+
+    .grid .map img {
+        height: 20rem;
+        width: 20rem;
+    }
+
+    .grid .map .map img {
+        height: 20rem;
+        width: 20rem;
     }
 
     .cover {
