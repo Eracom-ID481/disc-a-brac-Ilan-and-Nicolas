@@ -828,13 +828,6 @@ p.display {
     color: #1f1f1f;
 }
 
-.grid .disc img {
-    height: 150px;
-    position: absolute;
-    left: 32rem;
-    top: 50rem;
-}
-
 .grid .disc h3 {
     padding-bottom: 1rem;
     padding-left: 5rem;
@@ -857,6 +850,10 @@ p.display {
     text-align: left;
     width: 75%;
     color: #1f1f1f;
+}
+
+.grid .disc {
+    padding-bottom: 4rem;
 }
 
 /* footer*/
