@@ -1515,10 +1515,6 @@ p.display {
         display: flex;
     }
 
-    .footer .footer-content .footer-section {
-        width: 100%;
-    }
-
     .footer h1 {
         font-weight: 900;
         font-size: 1rem;
